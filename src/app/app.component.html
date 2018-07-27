@@ -1,0 +1,10 @@
+<h1>Imasters - O poder dos componentes Ionic</h1>
+
+<app-modal>
+    <h3>Modal exemplo</h3>
+    <button type="button" (click)="helloWorld()">Falar</button>
+</app-modal>
+
+<app-modal-pessoa titulo="Modal de pessoas" [nomes]="arrayNomes"></app-modal-pessoa>
+
+<app-modal-exibir (nomeOut)="quandoReceberNome($event)"></app-modal-exibir>
